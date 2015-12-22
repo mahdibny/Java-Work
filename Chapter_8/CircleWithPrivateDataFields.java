@@ -3,6 +3,7 @@
 public class CircleWithPrivateDataFields{
 	private double radius =1;             //date fields that are legit
 	private static int numberOfObjects =0;//static variable 
+	// static variables are shared amoung all of the class
 
 	public CircleWithPrivateDataFields(){
 		numberOfObjects++;
@@ -18,7 +19,9 @@ public class CircleWithPrivateDataFields{
 	}
 
 	public void setRadius(double newRadius){
-		radius = (newRadius>=0) ? newRadius:0;
+		radius = (newRadius>=10) ? newRadius:1;
+		// This statement lets us know that if the number is less than 10 we
+		// will set the value of the radius to 1
 	}
 	
 	public static int getNumberOfObjects(){

@@ -1,0 +1,117 @@
++equals(s1: Object): boolean
++equalsIgnoreCase(s1: String):
+boolean
++compareTo(s1: String): int
++compareToIgnoreCase(s1: String):
+int
++regionMatches(index: int, s1: String,
+s1Index: int, len: int): boolean
++regionMatches(ignoreCase: boolean,
+index: int, s1: String, s1Index: int,
+len: int): boolean
++startsWith(prefix: String): boolean
++endsWith(suffix: String): boolean
+
+Returns true if this string is equal to string s1.
+Returns true if this string is equal to string s1 case
+insensitive.
+Returns an integer greater than 0, equal to 0, or less than 0
+to indicate whether this string is greater than, equal to, or
+less than s1.
+Same as compareTo except that the comparison is case
+insensitive.
+Returns true if the specified subregion of this string exactly
+matches the specified subregion in string s1.
+Same as the preceding method except that you can specify
+whether the match is case sensitive.
+Returns true if this string starts with the specified prefix.
+Returns true if this string ends with the specified suffix.
+
+
++toLowerCase(): String
++toUpperCase(): String
++trim(): String
++replace(oldChar: char,
+newChar: char): String
++replaceFirst(oldString: String,
+newString: String): String
++replaceAll(oldString: String,
+newString: String): String
++split(delimiter: String):String[]
+
+Returns a new string with all characters converted to lowercase.
+Returns a new string with all characters converted to uppercase.
+Returns a new string with whitespace characters trimmed on both sides.
+Returns a new string that replaces all matching characters in this
+string with the new character.
+Returns a new string that replaces the first matching substring in
+this string with the new substring.
+Returns a new string that replaces all matching substrings in this
+string with the new substring.
+Returns an array of strings consisting of the substrings split by the
+delimiter.
+
++length(): int
++charAt(index: int): char
++concat(s1: String): String
+
+Returns the number of characters in this string.
+Returns the character at the specified index from this string.
+Returns a new string that concatenates this string with string s1.
+
++substring(beginIndex: int):
+String
++substring(beginIndex: int,
+endIndex: int): String
+
+Returns this string’s substring that begins with the character at the
+specified beginIndex and extends to the end of the string, as
+shown in Figure 9.6.
+Returns this string’s substring that begins at the specified
+beginIndex and extends to the character at index endIndex – 1,
+as shown in Figure 9.6. Note that the character at endIndex is not
+
++indexOf(ch: char): int
++indexOf(ch: char, fromIndex:
+int): int
++indexOf(s: String): int
++indexOf(s: String, fromIndex:
+int): int
++lastIndexOf(ch: int): int
++lastIndexOf(ch: int,
+fromIndex: int): int
++lastIndexOf(s: String): int
++lastIndexOf(s: String,
+fromIndex: int): int
+
+Returns the index of the first occurrence of ch in the string.
+Returns -1 if not matched.
+Returns the index of the first occurrence of ch after fromIndex in
+the string. Returns -1 if not matched.
+Returns the index of the first occurrence of string s in this string.
+Returns -1 if not matched.
+Returns the index of the first occurrence of string s in this string
+after fromIndex. Returns -1 if not matched.
+Returns the index of the last occurrence of ch in the string.
+Returns -1 if not matched.
+Returns the index of the last occurrence of ch before fromIndex
+in this string. Returns -1 if not matched.
+Returns the index of the last occurrence of string s. Returns -1 if
+not matched.
+Returns the index of the last occurrence of string s before
+fromIndex. Returns -1 if not matched.
+
++valueOf(c: char): String
++valueOf(data: char[]): String
++valueOf(d: double): String
++valueOf(f: float): String
++valueOf(i: int): String
++valueOf(l: long): String
+
+Returns a string consisting of the character c.
+Returns a string consisting of the characters in the array.
+Returns a string representing the double value.
+Returns a string representing the float value.
+Returns a string representing the int value.
+Returns a string representing the long value.
++valueOf(b: boolean): String Returns a string representing the boolean value.
