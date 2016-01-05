@@ -14,7 +14,8 @@ public class TestCircle{
  	int number=myCircle2.getNumberOfObjects();
  	System.out.println("The number of objects " + number );
  	
- 	myCircle2.setRadius(0);
+ 	myCircle2.setRadius(100);
+ 	myCircle2.setRadius(10000);
  	System.out.println("The new radius " + myCircle2.getRadius());
 	}
 }
