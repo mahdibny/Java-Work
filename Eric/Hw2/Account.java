@@ -9,6 +9,11 @@ public class Account{
     private double balance;
     
     public Account(int accountID, int pin, double balance){
+        
+        setAccountID(accountID);
+        setBalance(balance);
+        setPin(pin);
+        /*
         if (accountID>=1000 & accountID<=9999){
             this.accountID=accountID;
         }
@@ -35,12 +40,14 @@ public class Account{
             + "Your balance has been defaulted to 0.");
             this.balance=0;
         }
+        */
     }
     
     // Set Methods
     public void setAccountID (int accountID){
         // i know you could right accountID = (accountID>=1000 & accountID<=9999) ? accountID=9999
         // but didn't know how to produce the error message
+        
         if (accountID>=1000 & accountID<=9999){
             this.accountID=accountID;
         }
@@ -88,15 +95,15 @@ public class Account{
     
     // to string methiod of the class
     public String toString() {
-        return " ID: " + this.accountID + " Balance: " + this.balance;
+        return " ID: " + this.getAccountID() + " Balance: " + this.getBalance();
         // returns the value of the ID and the balance of the specific object 
     }
     
     
     // comparison between objects
-    public boolean equals(Object obj){
+    public boolean equals(Account obj){
         if (obj instanceof Account){
-            return (pin==((Account)obj).pin & accountID==((Account)obj).accountID);
+            return (pin==((Account)obj).getPin() & accountID==((Account)obj).getAccountID());
             // checks to see if the account pin and ID are the same for two objects
         }
         else{
